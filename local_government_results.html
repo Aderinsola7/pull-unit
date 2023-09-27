@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Government Results</title>
+</head>
+<body>
+    <h1>Local Government Results</h1>
+    <table>
+        <tr>
+            <th>Party</th>
+            <th>Total Result</th>
+        </tr>
+        {% for result in total_results %}
+            <tr>
+                <td>{{ result[0] }}</td>
+                <td>{{ result[1] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

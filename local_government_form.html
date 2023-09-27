@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Local Government</title>
+</head>
+<body>
+    <h1>Select Local Government</h1>
+    <form method="post">
+        <select name="local_government_id">
+            {% for local_government in local_governments %}
+                <option value="{{ local_government[0] }}">{{ local_government[1] }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
